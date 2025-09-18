@@ -1,0 +1,1 @@
+#a pasta templates contem as páginas da aplicação
