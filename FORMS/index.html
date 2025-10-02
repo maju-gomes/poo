@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Campo</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <!-- atributo action recebe o arquivo de programação que processa os dados -->
+    <form action="dadosenviados.html">
+        <!-- label: etiqueta, rótulo -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Nome" required> <br>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email"> <br>
+        <label for="curso">Curso:</label>
+        <!-- COMBOBOX (PARA ITENS NUMEROSOS, LONGOS) -->
+        <select name="curso" id="curso">
+            <option value="infoweb" selected>Infoweb</option>
+            <option value="adm">Administração</option>
+            <option value="msi">Msi</option>
+        </select> <br>
+
+        <!-- quando se usa o componente "radio" ou checkbox, o valor do name deve ser o mesmo -->
+        <label><input type="radio" name="dir" checked value="diatinf">DIATINF</label>
+        <label><input type="radio" name="dir" value="diacin">DIACIN</label>
+        <label><input type="radio" name="dir" value="diacin">DIAREN</label>
+        <label><input type="radio" name="dir" value="diacin">DIAC</label>
+        <label><input type="radio" name="dir" value="diacin">DIACON</label>
+        <br>
+
+        <label><input type="radio" name="turno" value="mat">MATUTINO</label>
+        <label><input type="radio" name="turno" value="vesp">VESPERTINO</label>
+        
+        <br>
+
+        <label for="cidade">Cidade:</label>
+        <input type="type" id="cidade" list="cidade-list"> <br>
+        <datalist id="cidade-list">
+            <option value="Natal">
+            <option value="Parnamirim">
+            <option value="Macaíba">
+            <option value="Tibau">
+        </datalist>
+        <label for="obs">Obserações:</label>
+        <textarea name="obs" id="obs" cols="30" maxlenght="40" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptatem aliquam dolor aliquid, adipisci pariatur quos autem, odit ipsa iusto corrupti incidunt quae maxime beatae officia culpa est sint! At.</textarea> <br>
+        <input type="submit" value="ENVIAR">
+        <!-- <button type="submit">ENVIAR</button> -->
+    </form>
+
+</body>
+</html>

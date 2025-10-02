@@ -1,0 +1,9 @@
+label[for]{
+    display: inline-block;
+    width: 12rem;
+    /* a marcação de label não permite a definição de largura porque possui comportamento display inline 
+    Por isso devemos definir o display: inline block;
+    Este comportamento permite que eu defina a largura e tenha o formulário alinhado*/
+    vertical-align: top;
+    /* o atributo deixará o rótulo alinhado horizontalmente ao topo do textarea */
+}
